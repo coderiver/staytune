@@ -29,10 +29,30 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-skrill:before { content: ""; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+@font-face { font-family: "LFT_EticaDisplay_Heavy"; src: url("fonts/LFT_EticaDisplay_Heavy.eot"); src: url("fonts/LFT_EticaDisplay_Heavy.eot?#iefix") format("embedded-opentype"), url("fonts/LFT_EticaDisplay_Heavy.woff2") format("woff2"), url("fonts/LFT_EticaDisplay_Heavy.woff") format("woff"), url("fonts/LFT_EticaDisplay_Heavy.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "LFT_EticaDisplay_Thin"; src: url("fonts/LFT_EticaDisplay_Thin.eot"); src: url("fonts/LFT_EticaDisplay_Thin.eot?#iefix") format("embedded-opentype"), url("fonts/LFT_EticaDisplay_Thin.woff2") format("woff2"), url("fonts/LFT_EticaDisplay_Thin.woff") format("woff"), url("fonts/LFT_EticaDisplay_Thin.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+body { position: relative; color: white; font-family: "Helvetica", Arial, sans-serif; font-size: 17px; font-weight: 400; line-height: 1.4; background-color: #e7b530; min-width: 30px; }
 
+.wrapper { max-width: 1200px; }
+
+.main { position: relative; }
+.main__play { position: absolute; bottom: -32%; right: 28%; width: 40%; height: 100%; }
+.main__pic { width: 100%; }
+.main__logo { position: absolute; top: 13%; left: 23%; width: 52%; height: 34%; }
+
+section { font-size: 59px; text-shadow: 0 7px 0 rgba(39, 5, 43, 0.2); color: #FFF; font-family: "LFT_EticaDisplay_Heavy", Georgia, Times, "Times New Roman", sans-serif; }
+section .section__text { display: inline-block; margin: 0 auto; }
+
+footer { position: absolute; bottom: 0; width: 100%; max-width: 1200px; margin: 0 auto; }
+footer .menu { background-color: rgba(0, 0, 0, 0.7); height: 51px; }
+footer .menu li { display: inline-block; line-height: 51px; }
+footer .menu li a { text-decoration: none; color: #FFF; }
+footer .menu li a:hover { color: #aaa; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
+@media only screen and (max-width: 640px){
+ section{ font-size: 30px; }
+ footer .menu li a{ font-size: 10px; } }
 
 
 
