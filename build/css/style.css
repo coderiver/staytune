@@ -59,24 +59,26 @@ footer .menu__mod { background-color: #e7b530; }
 .header__logo { display: inline-block; }
 .header__menu { float: right; margin-top: 5px; cursor: pointer; background-image: url("../img/icons.png"); width: 29px; height: 20px; background-position: -195px 0px; }
 
-.section-category { background: #fff; margin-top: 26px; padding: 50px 30px 0; color: #000; }
+.section-category { background: #fff; margin-top: 23px; text-align: center; padding: 26px 15px 0 15px; color: #000; }
 
-.tabs { font-family: "HelveticaNeue", arial, sans-serif; font-size: 12px; font-weight: 400; }
+.section-listsection-list { font-family: "HelveticaNeue", arial, sans-serif; font-size: 12px; font-weight: 400; }
 
-.tabs > div { padding-top: 10px; }
+.section-list > div { padding-top: 10px; }
 
-.tabs ul { width: 100%; margin: 0px; padding: 0px; }
+.section-list ul { width: 100%; margin: 0px; padding: 0px; }
 
-.tabs ul li { margin: 0px; padding: 0px; cursor: pointer; display: block; float: left; padding: 10px 20px; background-color: rgba(0, 0, 0, 0.7); -webkit-border-top-left-radius: 2px; border-top-left-radius: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px; color: white; margin-right: 5px; -webkit-box-shadow: inset 0px -3px 5px 0px rgba(50, 50, 50, 0.8); box-shadow: inset 0px -3px 5px 0px rgba(50, 50, 50, 0.8); }
+.section-list ul li { margin: 0px; padding: 0px; cursor: pointer; display: block; float: left; padding: 5px 10px; background-color: rgba(0, 0, 0, 0.7); -webkit-border-top-left-radius: 2px; border-top-left-radius: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px; color: white; margin-right: 5px; -webkit-box-shadow: inset 0px -3px 5px 0px rgba(50, 50, 50, 0.8); box-shadow: inset 0px -3px 5px 0px rgba(50, 50, 50, 0.8); }
+.section-list ul li a { text-decoration: none; color: #fff; }
 
-.tabs ul li.active, .tabs ul li.active:hover { background: #fff; color: #151515; -webkit-border-top-left-radius: 2px; border-top-left-radius: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px; margin-top: -5px; padding-bottom: 15px; -webkit-box-shadow: none; box-shadow: none; }
+.section-list ul li.is-active, .section-list ul li.is-active:hover { background: #fff; -webkit-border-top-left-radius: 2px; border-top-left-radius: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px; margin-top: -5px; padding-bottom: 15px; -webkit-box-shadow: none; box-shadow: none; }
+.section-list ul li.is-active a, .section-list ul li.is-active:hover a { color: #151515; }
 
-.tabs ul li:hover { background-color: rgba(0, 0, 0, 0.4); }
+.section-list ul li:hover { background-color: rgba(0, 0, 0, 0.4); }
 
-.play-item { position: relative; display: inline-block; margin-bottom: 25px; margin-right: 5px; }
+.play-item { position: relative; display: inline-block; font-size: 0; margin-bottom: 25px; margin-right: 5px; }
 .play-item__pic { display: inline-block; }
-.play-item__pic-cm { display: inline-block; position: absolute; right: -14px; bottom: 2px; width: 60px; height: 66px; background: url(../img/item-play-sm.png) no-repeat; }
-.play-item__title { text-align: left; }
+.play-item__pic-cm { position: absolute; right: -12px; bottom: 6px; width: 60px; height: 66px; background: url(../img/item-play-sm.png) no-repeat; }
+.play-item__title { text-align: left; font-size: 12px; padding-top: 10px; }
 
 .section-category-text { background: #FFF; color: #000; padding: 25px 10px 30px 10px; font-family: "HelveticaNeue", arial, sans-serif; }
 .section-category-text h3 { text-transform: uppercase; font-size: 14px; margin-bottom: 15px; }
@@ -107,9 +109,14 @@ footer .menu__mod { background-color: #e7b530; }
 @media only screen and (max-width: 640px){
  .container{ padding: 0 10px; }
  .header__menu{ bottom: 12px; }
- .section-category{ margin-top: 16px; padding: 30px 15px 0; }
- .tabs{ font-size: 12px; }
- .tabs ul li{ padding: 5px 9px; margin-right: 3px; } }
+ .section-category{ margin-top: 16px; padding: 26px 10px 0 10px; }
+ .section-list ul li{ font-size: 12px; margin-right: 2px; } }
+
+@media only screen and (max-width: 576px){
+ .section-category{ text-align: left; } }
+
+@media only screen and (max-width: 450px){
+ .section-category{ text-align: center; } }
 
 
 
