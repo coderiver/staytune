@@ -31,28 +31,87 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 @font-face { font-family: "LFT_EticaDisplay_Heavy"; src: url("fonts/LFT_EticaDisplay_Heavy.eot"); src: url("fonts/LFT_EticaDisplay_Heavy.eot?#iefix") format("embedded-opentype"), url("fonts/LFT_EticaDisplay_Heavy.woff2") format("woff2"), url("fonts/LFT_EticaDisplay_Heavy.woff") format("woff"), url("fonts/LFT_EticaDisplay_Heavy.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "LFT_EticaDisplay_Thin"; src: url("fonts/LFT_EticaDisplay_Thin.eot"); src: url("fonts/LFT_EticaDisplay_Thin.eot?#iefix") format("embedded-opentype"), url("fonts/LFT_EticaDisplay_Thin.woff2") format("woff2"), url("fonts/LFT_EticaDisplay_Thin.woff") format("woff"), url("fonts/LFT_EticaDisplay_Thin.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-body { position: relative; color: white; font-family: "Helvetica", Arial, sans-serif; font-size: 17px; font-weight: 400; line-height: 1.4; background-color: #e7b530; min-width: 30px; }
+body { position: relative; color: white; font-family: "Helvetica", Arial, sans-serif; font-size: 17px; font-weight: 400; line-height: 1.4; background-color: #e7b530; min-width: 320px; }
 
-.wrapper { max-width: 1200px; }
+.out { height: 100%; margin-bottom: -20px; }
+
+.wrapper { max-width: 800px; min-height: 100%; margin-bottom: -20px; margin: 0 auto; }
+
+.container { padding: 0 20px; }
+
+* { border: 1px solid red; }
 
 .main { position: relative; }
 .main__play { position: absolute; bottom: -32%; right: 28%; width: 40%; height: 100%; }
 .main__pic { width: 100%; }
 .main__logo { position: absolute; top: 13%; left: 23%; width: 52%; height: 34%; }
 
-section { font-size: 59px; text-shadow: 0 7px 0 rgba(39, 5, 43, 0.2); color: #FFF; font-family: "LFT_EticaDisplay_Heavy", Georgia, Times, "Times New Roman", sans-serif; }
-section .section__text { display: inline-block; margin: 0 auto; }
+section .section-title { padding-top: 30px; text-align: center; }
+section .section-title p { font-size: 65px; text-shadow: 0 7px 0 rgba(39, 5, 43, 0.2); color: #FFF; font-family: "LFT_EticaDisplay_Heavy", Georgia, Times, "Times New Roman", sans-serif; }
+section .section-title__mod p { text-shadow: none; font-size: 16px; padding-bottom: 15px; text-align: left; }
 
-footer { position: absolute; bottom: 0; width: 100%; max-width: 1200px; margin: 0 auto; }
-footer .menu { background-color: rgba(0, 0, 0, 0.7); height: 51px; }
-footer .menu li { display: inline-block; line-height: 51px; }
-footer .menu li a { text-decoration: none; color: #FFF; }
+footer { min-width: 320px; max-width: 800px; margin: 0 auto; }
+footer .menu { background-color: rgba(0, 0, 0, 0.7); height: 25px; text-align: center; }
+footer .menu li { display: inline-block; line-height: 20px; }
+footer .menu li a { text-decoration: none; color: #FFF; font-size: 9px; }
 footer .menu li a:hover { color: #aaa; }
+footer .menu__mod { background-color: #e7b530; }
+
+.header { position: relative; padding: 25px 0; }
+.header__logo { display: inline-block; }
+.header__menu { float: right; margin-top: 5px; cursor: pointer; background-image: url("../img/icons.png"); width: 29px; height: 20px; background-position: -195px 0px; }
+
+.section-category { background: #fff; margin-top: 26px; padding: 50px 30px 0; color: #000; }
+
+.tabs { font-family: "HelveticaNeue", arial, sans-serif; font-size: 12px; font-weight: 400; }
+
+.tabs > div { padding-top: 10px; }
+
+.tabs ul { width: 100%; margin: 0px; padding: 0px; }
+
+.tabs ul li { margin: 0px; padding: 0px; cursor: pointer; display: block; float: left; padding: 10px 20px; background-color: rgba(0, 0, 0, 0.7); -webkit-border-top-left-radius: 2px; border-top-left-radius: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px; color: white; margin-right: 5px; -webkit-box-shadow: inset 0px -3px 5px 0px rgba(50, 50, 50, 0.8); box-shadow: inset 0px -3px 5px 0px rgba(50, 50, 50, 0.8); }
+
+.tabs ul li.active, .tabs ul li.active:hover { background: #fff; color: #151515; -webkit-border-top-left-radius: 2px; border-top-left-radius: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px; margin-top: -5px; padding-bottom: 15px; -webkit-box-shadow: none; box-shadow: none; }
+
+.tabs ul li:hover { background-color: rgba(0, 0, 0, 0.4); }
+
+.play-item { position: relative; display: inline-block; margin-bottom: 25px; margin-right: 5px; }
+.play-item__pic { display: inline-block; }
+.play-item__pic-cm { display: inline-block; position: absolute; right: -72px; bottom: -66px; width: 117px; height: 130px; background: url(../img/item-play-sm.png) no-repeat; }
+.play-item__title { text-align: left; }
+
+.section-category-text { background: #FFF; color: #000; padding: 25px 10px 30px 10px; font-family: "HelveticaNeue", arial, sans-serif; }
+.section-category-text h3 { text-transform: uppercase; font-size: 14px; margin-bottom: 15px; }
+.section-category-text h4 { font-size: 14px; font-weight: 500; margin: 30px 0 15px 0; }
+.section-category-text p { font-size: 10px; line-height: 16px; }
+.section-category-text p a { color: #d19507; }
+
+.menu-text { padding-top: 30px; }
+
+.right-section { display: none; position: absolute; right: 0; top: 0; background-color: #23221f; width: 150px; height: 100%; padding: 100px 15px 0 30px; }
+.right-section li { font-family: "HelveticaNeue", arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 40px; border-bottom: 2px solid rgba(91, 91, 91, 0.1); }
+.right-section li a { text-transform: uppercase; text-decoration: none; color: #FFF; }
+.right-section li a:hover { color: #f4ac00; }
+
+.btn-menu { position: absolute; right: 20px; top: 30px; z-index: 2; }
+
+.is-overflow { overflow: hidden; }
+
+.is-hide { display: block; }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
+
+@media only screen and (max-width: 800px){
+ section .section-title p{ font-size: 9vw; }
+ section .section-title__mod p{ font-size: 16px; } }
+
 @media only screen and (max-width: 640px){
- section{ font-size: 30px; }
- footer .menu li a{ font-size: 10px; } }
+ .container{ padding: 0 10px; }
+ .header__menu{ bottom: 12px; }
+ .section-category{ margin-top: 16px; padding: 30px 15px 0; }
+ .tabs{ font-size: 12px; }
+ .tabs ul li{ padding: 5px 9px; margin-right: 3px; } }
 
 
 
